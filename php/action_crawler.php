@@ -29,15 +29,15 @@ foreach ($source as $imgUrl) {
     $info = $item->getFileInfo();
     
     // 图片打水印
-    $ext = array(
-        '.jpg',
-        '.png',
-        '.gif'
-    );
-    if (in_array($info['type'], $ext)) {
-        resize_img(ROOT_PATH . $info['url']); // 缩放大小
-        watermark_img(ROOT_PATH . $info['url']); // 水印
-    }
+//    $ext = array(
+//        '.jpg',
+//        '.png',
+//        '.gif'
+//    );
+//    if (in_array($info['type'], $ext)) {
+//        resize_img(ROOT_PATH . $info['url']); // 缩放大小
+//        watermark_img(ROOT_PATH . $info['url']); // 水印
+//    }
     
     array_push($list, array(
         "state" => $info["state"],
